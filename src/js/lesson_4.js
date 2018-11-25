@@ -87,6 +87,9 @@ let appData = {
       i++;
       document.write('<p>' + i + ': ' + item + '</p>');
     });
+    for (let key in appData){
+      console.log('свойство '+ key +' имеет значение'+appData[key]);
+    }
   }
 };
 // console.log(appData.expenses);
